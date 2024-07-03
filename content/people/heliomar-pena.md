@@ -1,5 +1,5 @@
 ---
 id: heliomar
 name: Heliomar Peña
-avatar: /images/heliomar.png
+avatar: /avatar/images/heliomar.png
 ---
