@@ -20,6 +20,7 @@ Por eso hoy, te traigo ejemplos de uso donde me ha sido realmente útil para dif
 
 Para utilizar RegExp en Visual Studio Code, debes ubicar el ícono ![[Pasted image 20240701173728.png]]. Este ícono lo vas conseguir ya sea que estés realizando una búsqueda en un archivo abierto (normalmente inicias esta búsqueda presionando CTRL + F), como si realizas una búsqueda global en tu espacio de trabajo (que puedes iniciarla normalmente al presionar CTRL + SHIFT + F
 
+
 | Búsqueda en archivo                  | Búsqueda global                      |
 | ------------------------------------ | ------------------------------------ |
 | ![[Pasted image 20240701174241.png]] | ![[Pasted image 20240701173920.png]] |
