@@ -2,7 +2,7 @@
 title: Utilizar expresiones regulares para explorar el código
 date: 2024-07-02
 authors:
-  - "[heliomar]"
+  - heliomar
 ---
 Utilizar expresiones regulares en VSCode puede ayudarte a explorar fácilmente un nuevo proyecto en el que estés empezado, así como ayudarte en refactors donde necesites cambiar el alguna parte del código en muchos lados a la vez.
 
