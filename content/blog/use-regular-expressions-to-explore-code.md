@@ -73,6 +73,4 @@ Los cuantificadores que más utilizo son los siguientes:
 | x+       | Encuentra 1 o más veces el elemento "x" anterior Equivalente a `{1,}`. Por ejemplo, `/a+/` coincide con la "_a_" en "candy" y todas las "_a_"es en "caaaaaaandy".                        |
 | x?       | Halla 0 o 1 vez el elemento "x" anterior. Por ejemplo, `/e?le?/` coincide con "el" en "ángel" y "ele" en "ángeles".                                                                      |
 
-### Algunos ejemplos
-
-🚧 Under construction 🚧
+### 🚧 Algunos ejemplos 🚧
