@@ -73,4 +73,17 @@ Los cuantificadores que más utilizo son los siguientes:
 | x+       | Encuentra 1 o más veces el elemento "x" anterior Equivalente a `{1,}`. Por ejemplo, `/a+/` coincide con la "_a_" en "candy" y todas las "_a_"es en "caaaaaaandy".                        |
 | x?       | Halla 0 o 1 vez el elemento "x" anterior. Por ejemplo, `/e?le?/` coincide con "el" en "ángel" y "ele" en "ángeles".                                                                      |
 
-### 🚧 Algunos ejemplos 🚧
+### Ejemplos de uso
+
+#### Hallar colores de CSS que podrian crearsele variables
+
+Imagina que estás refactorizando un código y algo que te gustaría mejorar es implementar el uso de [variables de CSS](https://developer.mozilla.org/es/docs/Web/CSS/Using_CSS_custom_properties) en los colores para poder cambiarlos fácilmente en un futuro. Debemos pensar que los colores en CSS se pueden [representar en varias maneras](https://developer.mozilla.org/es/docs/Web/CSS/color_value), como RGB, RGBA, HSL, HSLA, HEX (#XXX), HEX LARGO (#XXXXXX) y HEX con canal alpha (#XXXXXXXX).
+
+Así que utilizaremos diferentes expresiones regulares para ir descubriendo los colores declarados de cada una de esas maneras y así poder cambiarlos en nuestro código.
+
+**Hexadecimal:** `#[0-9a-zA-Z]+` - Con esta expresión regular podemos capturar todos los colores hexadecimales que hayan en nuestro código, desde la versión corta, hasta la versión con canal alpha.![[Pasted image 20240705211520.png]]
+
+**RGB y RGBA**: `rgb(a)?\((\d+[,]?[\s]?){3,4}\)` - Con esta expresión regular podrás capturar todos los colores declarados utilizando el formato RGB y RGBA.![[Pasted image 20240705211943.png]]
+
+**HSL y HSLA**: 
+
