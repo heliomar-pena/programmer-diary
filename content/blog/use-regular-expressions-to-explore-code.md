@@ -81,9 +81,20 @@ Imagina que estás refactorizando un código y algo que te gustaría mejorar es 
 
 Así que utilizaremos diferentes expresiones regulares para ir descubriendo los colores declarados de cada una de esas maneras y así poder cambiarlos en nuestro código.
 
-**Hexadecimal:** `#[0-9a-zA-Z]+` - Con esta expresión regular podemos capturar todos los colores hexadecimales que hayan en nuestro código, desde la versión corta, hasta la versión con canal alpha.![[Pasted image 20240705211520.png]]
+**Hexadecimal:** `#[0-9a-fA-F]{3,8}` - Con esta expresión regular podemos capturar todos los colores hexadecimales que hayan en nuestro código, desde la versión corta, hasta la versión con canal alpha.![[Pasted image 20240706110818.png]]
 
-**RGB y RGBA**: `rgb(a)?\((\d+[,]?[\s]?){3,4}\)` - Con esta expresión regular podrás capturar todos los colores declarados utilizando el formato RGB y RGBA.![[Pasted image 20240705211943.png]]
+Funciona de la siguiente manera:
+
+- `#`: Es un caracter simple, simplemente busca por textos que contengan el caracter `#`
+- `[]`: Es una [clase de caracteres](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class). Hace que el RegExp capture cualquiera de los elementos dentro del conjunto de caracteres
+- `{3,8}`: Es un [cuantificador](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Quantifiers). Indica a la expresion regular que deseamos que las coincidencias de la clase de caracteres anterior se repitan entre 3 y 8 veces.
+- `0-9`: Esto está dentro de la clase de carácteres. Es una forma de decir que quiero todos los números del 0 al 9
+- `a-f`: Significa que quiero obtener todos los carácteres entre a y f. Es útil ya que las expresiones regulares solo admiten los carácteres: a, b, c, d, e, f
+- `A-F`: Lo mismo que el de arriba, pero en mayúscula.
+
+De esta manera podremos obtener una gran cantidad de colores hexadecimales que esté declarada en nuestro código y así poder utilizar la información para futuros refactoreos, como agregar variables de CSS en lugar de codificar los colores cada vez que los necesitemos.
+
+**RGB y RGBA**: `rgba?\((([0-9],? ?){1,3}){3,4}\)` - Con esta expresión regular podrás capturar todos los colores declarados utilizando el formato RGB y RGBA.![[Pasted image 20240706111208.png]]
 
 **HSL y HSLA**: 
 
