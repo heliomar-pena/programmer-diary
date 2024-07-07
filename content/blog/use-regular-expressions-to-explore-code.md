@@ -23,12 +23,15 @@ Para utilizar RegExp en Visual Studio Code, debes ubicar el ícono ![[Pasted ima
 | Búsqueda en archivo                  | Búsqueda global                      |
 | ------------------------------------ | ------------------------------------ |
 | ![[Pasted image 20240701174241.png]] | ![[Pasted image 20240701173920.png]] |
+
 Para activarlo, solo debes darle click y notarás que resaltará en un color diferente (el color varía según el tema. Acá como se ve el mío:
 
 | Búsqueda en archivo                  | Búsqueda global                      |
 | ------------------------------------ | ------------------------------------ |
 | ![[Pasted image 20240701174333.png]] | ![[Pasted image 20240701174348.png]] |
+
 Una vez activo, ya podrás empezar a realizar búsquedas globalmente o en el archivo actualmente abierto utilizando expresiones regulares 
+
 ## ¿Qué son las expresiones regulares?
 
 Una expresión regular está compuesta por una combinación de carácteres simples y carácteres especiales. 
