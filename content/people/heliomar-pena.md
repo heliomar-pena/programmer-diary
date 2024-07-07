@@ -17,6 +17,6 @@ In case you are curious and want to know more about me you can take a look to so
 
 Thanks for reading, hope you found any information in this site useful for your projects or your live.
 ## Contact
-- LinkedIn: <https://www.linkedin.com/in/heliomar/>
-- GitHub: <https://github.com/heliomar-pena/>
+- LinkedIn: https://www.linkedin.com/in/heliomar/
+- GitHub: https://github.com/heliomar-pena/
 - e-mail: [penaheliomar@gmail.com](mailto:penaheliomar@gmail.com)
